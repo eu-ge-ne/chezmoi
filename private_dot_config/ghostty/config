@@ -1,0 +1,11 @@
+font-family = "Fira Code Retina"
+font-size = 14
+font-thicken = true
+
+macos-titlebar-style = native
+macos-option-as-alt = true
+
+keybind = super+w=close_tab
+
+theme = ayu
+

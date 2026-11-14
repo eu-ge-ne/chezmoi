@@ -1,0 +1,49 @@
+# vim mode
+bindkey -v
+export KEYTIMEOUT=1
+bindkey '^R' history-incremental-search-backward
+export PROMPT_EOL_MARK=""
+
+
+# starship
+eval "$(starship init zsh)"
+
+
+# eza
+alias ls="eza -1lab --icons=always --group-directories-first"
+
+
+# yazi
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+
+# editor
+export EDITOR="codium --wait"
+export VISUAL="$EDITOR"
+
+
+# pnpm
+export PNPM_HOME='/Users/eug/Library/pnpm'
+case ":$PATH:" in
+  ":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+
+
+# ps
+alias psx="ps -o pid,%cpu,rss,command"
+alias psw="watch ps -o pid,%cpu,rss,command"
+
+
+# yt-dlp
+function yt() {
+	yt-dlp -t mkv "$1"
+}
+

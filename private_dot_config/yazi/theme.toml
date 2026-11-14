@@ -1,0 +1,9 @@
+[filetype]
+rules = [
+	{ url = "*/", fg = "white" }
+]
+
+[mode]
+normal_alt = {
+	fg = "white"
+}

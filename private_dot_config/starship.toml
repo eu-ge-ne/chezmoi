@@ -1,0 +1,5 @@
+[character]
+success_symbol = "[INS ❯](bold green)"
+error_symbol = "[INS ❯](bold red)"
+vicmd_symbol = "[NOR ❮](bold yellow)"
+

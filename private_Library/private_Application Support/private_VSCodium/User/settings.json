@@ -1,0 +1,79 @@
+{
+  // !
+  "telemetry.telemetryLevel": "off",
+  "telemetry.editStats.enabled": false,
+  "workbench.enableExperiments": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
+  "chat.disableAIFeatures": true,
+  "workbench.settings.showAISearchToggle": false,
+  "window.commandCenter": false,
+  "update.mode": "none",
+  "breadcrumbs.enabled": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "vsicons.presets.hideExplorerArrows": true,
+  "workbench.startupEditor": "none",
+
+  // editor
+  "editor.fontSize": 15,
+  "editor.fontFamily": "Fira Code Retina",
+  "editor.formatOnSave": true,
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "editor.renderWhitespace": "trailing",
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": false,
+  "editor.guides.highlightActiveBracketPair": false,
+  "editor.smoothScrolling": true,
+
+  // explorer
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // files
+  "files.autoSave": "afterDelay",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/.git/objects/**": true,
+  },
+
+  // git
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.branchRandomName.enable": true,
+  "git.autofetch": true,
+  "git.autofetchPeriod": 3600,
+
+  // search
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+  },
+
+  // terminal
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.minimumContrastRatio": 1,
+  "terminal.integrated.defaultLocation": "editor",
+  "terminal.integrated.initialHint": false,
+  "terminal.integrated.suggest.providers": {
+    "vscode.terminal-suggest": false,
+  },
+
+  // workbench
+  "workbench.tree.indent": 40,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Dark+",
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.editorActionsLocation": "titleBar",
+  "workbench.editor.useModal": "off",
+  "workbench.cloudChanges.autoResume": "off",
+  "workbench.cloudChanges.continueOn": "off",
+
+  //
+}
